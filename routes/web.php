@@ -17,6 +17,46 @@ Route::get('blog', function () {
 
 Route::get('pertemuan5', function () {
     return view('pertemuan5');
+})->name('pertemuan5');
+
+Route::get('/makeoverig', function () {
+    return view('makeoverig');
+})->name('makeoverig');
+
+Route::get('/linktree', function () {
+    return view('linktree');
+})->name('linktree');
+
+Route::get('/indexp5', function () {
+    return view('indexP5');
+})->name('indexp5');
+
+Route::get('/5026231186', function () {
+    return view('5026231186');
+});
+
+Route::get('/contoh', function () {
+    return view('contoh');
+});
+
+Route::get('/intro', function () {
+    return view('intro');
+});
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/news1', function () {
+    return view('news1');
+});
+
+Route::get('/responsive', function () {
+    return view('responsive');
+});
+
+Route::get('/template', function () {
+    return view('template');
 });
 
 Route::get('dosen', [DosenController::class, 'index']);
