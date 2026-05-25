@@ -22,3 +22,4 @@ Route::get('pertemuan5', function () {
 Route::get('dosen', [DosenController::class, 'index']);
 Route::get('biodata', [DosenController::class, 'biodata']);
 
+//pertemuan12
