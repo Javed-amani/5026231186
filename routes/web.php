@@ -7,6 +7,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\MejaController;
+use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\SiswaController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -104,3 +107,15 @@ Route::post('/meja/store', [MejaController::class, 'store']);
 Route::get('/meja/edit/{id}', [MejaController::class, 'edit']);
 Route::post('/meja/update', [MejaController::class, 'update']);
 Route::get('/meja/hapus/{id}', [MejaController::class, 'hapus']);
+
+Route::get('/siswa', [SiswaController::class, 'index'])->name('siswa.index');
+Route::get('/siswa/create', [SiswaController::class, 'create'])->name('siswa.create');
+Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
+Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.edit');
+Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
+Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+Route::get('/', [KeranjangController::class, 'index'])->name('keranjang.index');
+Route::get('/keranjang/create', [KeranjangController::class, 'create'])->name('keranjang.create');
+Route::post('/keranjang/store', [KeranjangController::class, 'store'])->name('keranjang.store');
+Route::delete('/keranjang/{id}', [KeranjangController::class, 'destroy'])->name('keranjang.destroy');
