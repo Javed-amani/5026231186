@@ -22,7 +22,7 @@
             <p><a href="{{ route('linktree') }}" target="_blank"><button class="btn btn-primary">Tugas Link Tree</button></a>
             </p>
             <p><a href="{{ route('makeoverig') }}" target="_blank"><button class="btn btn-primary">Tugas Make Over IG</button></a></p>
-            <p><a href="" target="_blank"><button class="btn btn-primary">UTS</button></a></p>
+            <p><a href="" target="_blank"><button class="btn btn-primary">EAS</button></a></p>
         </center>
     </div>
 
