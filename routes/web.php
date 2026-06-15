@@ -119,3 +119,6 @@ Route::get('/', [KeranjangController::class, 'index'])->name('keranjang.index');
 Route::get('/keranjang/create', [KeranjangController::class, 'create'])->name('keranjang.create');
 Route::post('/keranjang/store', [KeranjangController::class, 'store'])->name('keranjang.store');
 Route::delete('/keranjang/{id}', [KeranjangController::class, 'destroy'])->name('keranjang.destroy');
+
+Route::get('/eas', [PenggajianController::class, 'index'])->name('penggajian.index');
+Route::get('/penggajian/create', [PenggajianController::class, 'create'])->name('penggajian.create');
